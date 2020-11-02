@@ -1,0 +1,14 @@
+{
+  "name": "contract-testing-nodejs-pact",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@pact-foundation/pact": "^9.13.0",
+    "mocha": "^8.2.0"
+  },
+  "scripts": {
+    "test": "npm run test:consumer && npm run test:provider",
+    "test:consumer": "mocha consumer.spec.js",
+    "test:provider": "node verify-provider.js"
+  }
+}
