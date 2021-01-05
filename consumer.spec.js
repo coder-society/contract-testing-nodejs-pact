@@ -8,6 +8,7 @@ describe('Pact with Order API', () => {
     port: 8084,
     consumer: 'OrderClient',
     provider: 'OrderApi',
+    logLevel: 'debug'
   })
 
   before(() => provider.setup())
