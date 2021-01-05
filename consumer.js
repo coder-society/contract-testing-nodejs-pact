@@ -4,7 +4,7 @@ module.exports = {
   fetchOrders: () =>
     new Promise((resolve, reject) => {
       http
-        .get('http://localhost:8080/orders', (resp) => {
+        .get('http://localhost:8084/orders', (resp) => {
           let data = ''
 
           resp.on('data', (chunk) => {

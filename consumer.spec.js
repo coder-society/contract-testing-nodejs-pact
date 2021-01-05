@@ -5,7 +5,7 @@ const { eachLike } = Matchers
 
 describe('Pact with Order API', () => {
   const provider = new Pact({
-    port: 8080,
+    port: 8084,
     consumer: 'OrderClient',
     provider: 'OrderApi',
   })
